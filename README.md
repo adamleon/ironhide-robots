@@ -1,4 +1,4 @@
-# kuka_ipk
+# ironhide-robots
 Repository based on [kuka_experimental](https://github.com/ros-industrial/kuka_experimental). Holds support files, moveit configurations and network configurations specific to the MTP laboratory.
 
 ## Prerequisite
