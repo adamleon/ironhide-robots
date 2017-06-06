@@ -1,10 +1,10 @@
 moveit_setup_assistant_config:
   URDF:
-    package: kuka_ipk_kr6r900sixx_support
-    relative_path: urdf/kr6r900sixx.xacro
+    package: ironhide_agilus_cell_support
+    relative_path: urdf/itonhide_agilus_cell.xacro
   SRDF:
     relative_path: config/kuka_kr6r900sixx.srdf
   CONFIG:
     author_name: Adam Leon Kleppe
     author_email: adam.l.kleppe@ntnu.no
-    generated_timestamp: 1494835214
+    generated_timestamp: 1496391161

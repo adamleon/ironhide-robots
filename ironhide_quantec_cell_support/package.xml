@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>kuka_ipk_large_cell_support</name>
+  <name>ironhide_quantec_cell_support</name>
   <version>0.1.0</version>
   <description>
     <p>
-      Support files for the large robotic cell at the IPK laboratory.
+      Support files for the Quantec robotic cell at the MTP laboratory.
     </p>
     <p>
       This package contains urdf / xacro resources, configuration
       files and launch files specifically written to work for the
-      large robotic cell at IPK.
+      large robotic cell at MTP.
     </p>
   </description>
-  <author>Asgeir Bjørkedal</author>
-  <maintainer email="asgeir.92@gmail.com">Asgeir Bjørkedal</maintainer>
+  <author>Adam Leon Kleppe</author>
+  <maintainer email="adam.l.kleppe@ntnu.no">Adam Leon Kleppe</maintainer>
   <license>Apache2</license>
 
   <buildtool_depend>catkin</buildtool_depend>

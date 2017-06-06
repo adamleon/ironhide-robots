@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(kuka_ipk_kr6r900sixx_support)
+project(ironhide_agilus_cell_support)
 
 find_package(catkin REQUIRED)
 

@@ -6,19 +6,19 @@
   <arg name="robot_description" default="robot_description"/>
 
   <!-- Load universal robot description format (URDF) -->
-  <param if="$(arg load_robot_description)" name="$(arg robot_description)" command="$(find xacro)/xacro.py '$(find kuka_ipk_kr6r900sixx_support)/urdf/kr6r900sixx.xacro'"/>
+  <param if="$(arg load_robot_description)" name="$(arg robot_description)" command="$(find xacro)/xacro --inorder '$(find ironhide_agilus_cell_support)/urdf/ironhide_agilus_cell.xacro'"/>
 
   <!-- The semantic description that corresponds to the URDF -->
-  <param name="$(arg robot_description)_semantic" textfile="$(find kuka_ipk_kr6r900sixx_moveit_config)/config/kuka_kr6r900sixx.srdf" />
+  <param name="$(arg robot_description)_semantic" textfile="$(find ironhide_agilus_cell_moveit_config)/config/kuka_kr6r900sixx.srdf" />
   
   <!-- Load updated joint limits (override information from URDF) -->
   <group ns="$(arg robot_description)_planning">
-    <rosparam command="load" file="$(find kuka_ipk_kr6r900sixx_moveit_config)/config/joint_limits.yaml"/>
+    <rosparam command="load" file="$(find ironhide_agilus_cell_moveit_config)/config/joint_limits.yaml"/>
   </group>
 
   <!-- Load default settings for kinematics; these settings are overridden by settings in a node's namespace -->
   <group ns="$(arg robot_description)_kinematics">
-    <rosparam command="load" file="$(find kuka_ipk_kr6r900sixx_moveit_config)/config/kinematics.yaml"/>
+    <rosparam command="load" file="$(find ironhide_agilus_cell_moveit_config)/config/kinematics.yaml"/>
   </group>
   
 </launch>

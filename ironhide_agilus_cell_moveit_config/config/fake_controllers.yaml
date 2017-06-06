@@ -1,5 +1,5 @@
 controller_list:
-  - name: fake_agilus1_controller
+  - name: fake_agilus_1_controller
     joints:
       - ag1_joint_a1
       - ag1_joint_a2
@@ -7,7 +7,7 @@ controller_list:
       - ag1_joint_a4
       - ag1_joint_a5
       - ag1_joint_a6
-  - name: fake_agilus2_controller
+  - name: fake_agilus_2_controller
     joints:
       - ag2_joint_a1
       - ag2_joint_a2
@@ -15,7 +15,7 @@ controller_list:
       - ag2_joint_a4
       - ag2_joint_a5
       - ag2_joint_a6
-  - name: fake_both_aguli_controller
+  - name: fake_both_agili_controller
     joints:
       - ag1_joint_a1
       - ag1_joint_a2

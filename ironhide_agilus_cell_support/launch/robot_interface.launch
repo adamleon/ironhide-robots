@@ -4,11 +4,11 @@
 
   <group ns="ag1">
     <!-- Load robot description -->
-    <param name="robot_description" command="$(find xacro)/xacro.py '$(find kuka_ipk_kr6r900sixx_support)/urdf/kr6r900sixx.xacro'"/>
+    <param name="robot_description" command="$(find xacro)/xacro.py '$(find ironhide_agilus_cell_support)/urdf/ironhide_agilus_cell.xacro'"/>
     
     <!-- Load RSI parameters -->
-    <rosparam file="$(find kuka_ipk_kr6r900sixx_support)/config/ag1_params_sim.yaml" command="load" if="$(arg sim)"/>
-    <rosparam file="$(find kuka_ipk_kr6r900sixx_support)/config/ag1_params.yaml" command="load" unless="$(arg sim)"/>
+    <rosparam file="$(find ironhide_agilus_cell_support)/config/ag1_params_sim.yaml" command="load" if="$(arg sim)"/>
+    <rosparam file="$(find ironhide_agilus_cell_support)/config/ag1_params.yaml" command="load" unless="$(arg sim)"/>
     
     <!-- Start node -->
     <node name="kuka_hardware_interface" pkg="kuka_rsi_hw_interface"
@@ -17,10 +17,10 @@
       required="true"/>
     
     <!-- Load joint controller configurations from YAML file to parameter server -->
-    <rosparam file="$(find kuka_ipk_kr6r900sixx_support)/config/ag1_hw_controllers.yaml" command="load"/>
+    <rosparam file="$(find ironhide_agilus_cell_support)/config/ag1_hw_controllers.yaml" command="load"/>
     
     <!-- Load standard kuka controller joint names from YAML file to parameter server -->
-    <rosparam file="$(find kuka_ipk_kr6r900sixx_support)/config/ag1_controller_joint_names.yaml" command="load"/>
+    <rosparam file="$(find ironhide_agilus_cell_support)/config/ag1_controller_joint_names.yaml" command="load"/>
     
     <!-- Load controllers -->
     <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen"
@@ -32,11 +32,11 @@
 
   <group ns="ag2">
     <!-- Load robot description -->
-    <param name="robot_description" command="$(find xacro)/xacro.py '$(find kuka_ipk_kr6r900sixx_support)/urdf/kr6r900sixx.xacro'"/>
+    <param name="robot_description" command="$(find xacro)/xacro.py '$(find ironhide_agilus_cell_support)/urdf/ironhide_agilus_cell.xacro'"/>
     
     <!-- Load RSI parameters -->
-    <rosparam file="$(find kuka_ipk_kr6r900sixx_support)/config/ag2_params_sim.yaml" command="load" if="$(arg sim)"/>
-    <rosparam file="$(find kuka_ipk_kr6r900sixx_support)/config/ag2_params.yaml" command="load" unless="$(arg sim)"/>
+    <rosparam file="$(find ironhide_agilus_cell_support)/config/ag2_params_sim.yaml" command="load" if="$(arg sim)"/>
+    <rosparam file="$(find ironhide_agilus_cell_support)/config/ag2_params.yaml" command="load" unless="$(arg sim)"/>
     
     <!-- Start node -->
     <node name="kuka_hardware_interface" pkg="kuka_rsi_hw_interface"
@@ -45,10 +45,10 @@
       required="true"/>
     
     <!-- Load joint controller configurations from YAML file to parameter server -->
-    <rosparam file="$(find kuka_ipk_kr6r900sixx_support)/config/ag2_hw_controllers.yaml" command="load"/>
+    <rosparam file="$(find ironhide_agilus_cell_support)/config/ag2_hw_controllers.yaml" command="load"/>
     
     <!-- Load standard kuka controller joint names from YAML file to parameter server -->
-    <rosparam file="$(find kuka_ipk_kr6r900sixx_support)/config/ag2_controller_joint_names.yaml" command="load"/>
+    <rosparam file="$(find ironhide_agilus_cell_support)/config/ag2_controller_joint_names.yaml" command="load"/>
     
     <!-- Load controllers -->
     <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen"

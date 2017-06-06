@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(kuka_ipk_large_cell_moveit_config)
+project(ironhide_quantec_cell_moveit_config)
 
 find_package(catkin REQUIRED)
 
