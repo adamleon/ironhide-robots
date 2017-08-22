@@ -1,0 +1,7 @@
+Header header
+bool execute
+bool absolute
+geometry_msgs/PoseArray agilus_1
+geometry_msgs/PoseArray agilus_2
+---
+float64 progress
